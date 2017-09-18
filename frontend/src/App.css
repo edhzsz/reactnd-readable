@@ -45,7 +45,7 @@
 }
 
 /* Buttons */
-.primary {
+.btn-rect {
   border: 10px;
   box-sizing: border-box;
   display: inline-block;
@@ -59,12 +59,10 @@
   height: 36px;
   line-height: 36px;
   border-radius: 2px;
-  background-color: #89abc6;
   text-align: center;
 }
 
-.primary span {
-  position: relative;
+.btn-rect span {
   opacity: 1;
   font-size: 14px;
   letter-spacing: 0px;
@@ -74,37 +72,16 @@
   user-select: none;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.primary {
   color: #000;
+  background-color: #89abc6;
 }
 
 .secondary {
-  border: 10px;
-  box-sizing: border-box;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-  outline: none;
-  position: relative;
-  z-index: 1;
-  height: 36px;
-  line-height: 36px;
-  border-radius: 2px;
+  color: #000;
   background-color: #baddf9;
-  text-align: center;
 }
 
-.secondary span {
-  position: relative;
-  opacity: 1;
-  font-size: 14px;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 0px;
-  user-select: none;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: #000;
-}
+

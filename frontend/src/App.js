@@ -11,10 +11,10 @@ class App extends Component {
         <div className="main">
           <div className="content">
             Hello World!
-            <button type="button" className="primary">
+            <button type="button" className="btn-rect primary">
               <span>Primary</span>
             </button>
-            <button type="button" className="secondary">
+            <button type="button" className="btn-rect secondary">
               <span>Secondary</span>
             </button>
           </div>
