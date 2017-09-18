@@ -8,13 +8,13 @@
 /* Layout */
 .main {
   padding-top: 64px;
-  min-height: 400px;
+  height: 100%;
 }
 
 .content {
   margin: 48px 72px;
   background-color: #546e7a;
-  min-height: 300px;
+  height: 300px;
 }
 
 /* Navigation Bar */
