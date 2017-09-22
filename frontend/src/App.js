@@ -10,8 +10,9 @@ class App extends Component {
         </div>
         <div className="main">
           <div className="side-bar">
-            <h2 className="title">Categories</h2>
+            <h2 className="title base">Categories</h2>
             <ul>
+              <li>All</li>
               <li>React</li>
               <li>Redux</li>
               <li>Udacity</li>
@@ -21,19 +22,37 @@ class App extends Component {
           <div className="content">
             <div className="post-list">
               <div className="post">
-                <div className="post-header">
+                <div className="post-header base">
                   <span>Udacity is the best place to learn React</span>
                 </div>
                 <div className="post-contents">
-                  <div className="post-main">
-                    Everyone says so after all.
+                  <div className="post-votes">
+                    <a className="up-vote secondary btn-circle" href="#">up vote</a>
+                    <span>6</span>
+                    <a className="down-vote secondary btn-circle" href="#">down vote</a>
                   </div>
-                  <div className="comments-list">
-                    Comments
+                  <div className="post-wrapper">
+                    <div className="post-main">
+                      Everyone says so after all.
+                    </div>
+                    <div className="comments-list">
+                      <span className="title">Comments</span>
+                      <ul>
+                        <li>
+                          <div>
+                            <span className="comment-content">Hi there! I am a COMMENT.</span>
+                            <span className="comment-author">thingtwo</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="add-post">
+            <a className="primary btn-circle" href="#addpost">Add a book</a>
           </div>
         </div>
         <div className="footer">
