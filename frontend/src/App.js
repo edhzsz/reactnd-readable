@@ -44,6 +44,12 @@ class App extends Component {
                             <span className="comment-author">thingtwo</span>
                           </div>
                         </li>
+                        <li>
+                          <div>
+                            <span className="comment-content">Comments. Are. Cool.</span>
+                            <span className="comment-author">thingone</span>
+                          </div>
+                        </li>
                       </ul>
                     </div>
                   </div>
