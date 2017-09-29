@@ -2,7 +2,7 @@
 
 exports[`Component: RoundButton should match its empty snapshot 1`] = `
 <div>
-  <span
+  <button
     className="btn-circle primary"
     style={
       Object {
@@ -19,7 +19,7 @@ exports[`Component: RoundButton should use the className and children 1`] = `
 <div
   className="add-post"
 >
-  <span
+  <button
     className="btn-circle primary"
     style={
       Object {
@@ -30,13 +30,13 @@ exports[`Component: RoundButton should use the className and children 1`] = `
     }
   >
     Add a Book
-  </span>
+  </button>
 </div>
 `;
 
 exports[`Component: RoundButton should use the correct type from props 1`] = `
 <div>
-  <span
+  <button
     className="btn-circle secondary"
     style={
       Object {
@@ -47,7 +47,7 @@ exports[`Component: RoundButton should use the correct type from props 1`] = `
     }
   >
     Add a Book
-  </span>
+  </button>
 </div>
 `;
 
@@ -60,7 +60,7 @@ exports[`Component: RoundButton should use the size and background properties fo
   <div
     className={undefined}
   >
-    <span
+    <button
       className="btn-circle primary"
       style={
         Object {

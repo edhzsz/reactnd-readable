@@ -15,7 +15,7 @@ const RoundButton = (props) => {
 
   return (
     <div className={props.className}>
-      <span className={`btn-circle ${ props.type }`} style={style} >{props.children}</span>
+      <button className={`btn-circle ${ props.type }`} style={style} >{props.children}</button>
     </div>
   );
 }
