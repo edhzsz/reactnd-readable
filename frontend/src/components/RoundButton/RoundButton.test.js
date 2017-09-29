@@ -23,6 +23,12 @@ describe('Component: RoundButton', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('should use the correct type from props', () => {
+    const button = shallow(<RoundButton type="secondary">Add a Book</RoundButton>)
+    const tree = toJson(button);
+    expect(tree).toMatchSnapshot();
+  });
+
   it('should use the size and background properties for the inner span style', () => {
     const button = mount(<RoundButton backgroundImage="./test.jpg" size={30} />)
     const tree = toJson(button);

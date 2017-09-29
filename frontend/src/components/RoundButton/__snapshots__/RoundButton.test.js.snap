@@ -34,6 +34,23 @@ exports[`Component: RoundButton should use the className and children 1`] = `
 </div>
 `;
 
+exports[`Component: RoundButton should use the correct type from props 1`] = `
+<div>
+  <span
+    className="btn-circle secondary"
+    style={
+      Object {
+        "backgroundSize": 25,
+        "height": 50,
+        "width": 50,
+      }
+    }
+  >
+    Add a Book
+  </span>
+</div>
+`;
+
 exports[`Component: RoundButton should use the size and background properties for the inner span style 1`] = `
 <RoundButton
   backgroundImage="./test.jpg"
