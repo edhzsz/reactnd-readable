@@ -1,3 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`(RoundButton) RoundButton should match its empty snapshot 1`] = `<div />`;
+exports[`Component: RoundButton should match its empty snapshot 1`] = `
+<div>
+  <a
+    className="btn-circle primary"
+    href="#addpost"
+  />
+</div>
+`;
+
+exports[`Component: RoundButton should match its empty snapshot 2`] = `
+<div
+  className="add-post primary"
+>
+  <a
+    className="btn-circle primary"
+    href="#addpost"
+  >
+    Add a Book
+  </a>
+</div>
+`;
