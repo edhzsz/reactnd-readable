@@ -2,22 +2,58 @@
 
 exports[`Component: RoundButton should match its empty snapshot 1`] = `
 <div>
-  <a
+  <span
     className="btn-circle primary"
-    href="#addpost"
+    style={
+      Object {
+        "backgroundSize": 25,
+        "height": 50,
+        "width": 50,
+      }
+    }
   />
 </div>
 `;
 
-exports[`Component: RoundButton should match its empty snapshot 2`] = `
+exports[`Component: RoundButton should use the className and children 1`] = `
 <div
-  className="add-post primary"
+  className="add-post"
 >
-  <a
+  <span
     className="btn-circle primary"
-    href="#addpost"
+    style={
+      Object {
+        "backgroundSize": 25,
+        "height": 50,
+        "width": 50,
+      }
+    }
   >
     Add a Book
-  </a>
+  </span>
 </div>
+`;
+
+exports[`Component: RoundButton should use the size and background properties for the inner span style 1`] = `
+<RoundButton
+  backgroundImage="./test.jpg"
+  size={30}
+  type="primary"
+>
+  <div
+    className={undefined}
+  >
+    <span
+      className="btn-circle primary"
+      style={
+        Object {
+          "backgroundImage": "url(./test.jpg)",
+          "backgroundSize": 15,
+          "height": 30,
+          "width": 30,
+        }
+      }
+    />
+  </div>
+</RoundButton>
 `;
