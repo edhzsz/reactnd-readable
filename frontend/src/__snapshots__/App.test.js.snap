@@ -62,21 +62,24 @@ exports[`Component: App should match its empty snapshot 1`] = `
             <div
               className="post-votes"
             >
-              <a
-                className="up-vote secondary btn-circle"
-                href="#"
+              <RoundButton
+                backgroundImage="down_arrow.svg"
+                className="up-vote"
+                size={30}
+                type="secondary"
               >
-                up vote
-              </a>
+                Up Vote
+              </RoundButton>
               <span>
                 6
               </span>
-              <a
-                className="down-vote secondary btn-circle"
-                href="#"
+              <RoundButton
+                backgroundImage="down_arrow.svg"
+                size={30}
+                type="secondary"
               >
-                down vote
-              </a>
+                Down Vote
+              </RoundButton>
             </div>
             <div
               className="post-wrapper"

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RoundButton from './components/RoundButton';
 import './App.css';
 import addIcon from './icons/add.svg'
+import downArrowIcon from './icons/down_arrow.svg'
 
 class App extends Component {
   render() {
@@ -29,9 +30,9 @@ class App extends Component {
                 </div>
                 <div className="post-contents">
                   <div className="post-votes">
-                    <a className="up-vote secondary btn-circle" href="#">up vote</a>
+                    <RoundButton type="secondary" className="up-vote" backgroundImage={downArrowIcon} size={30}>Up Vote</RoundButton>
                     <span>6</span>
-                    <a className="down-vote secondary btn-circle" href="#">down vote</a>
+                    <RoundButton type="secondary" backgroundImage={downArrowIcon} size={30}>Down Vote</RoundButton>
                   </div>
                   <div className="post-wrapper">
                     <div className="post-main">
