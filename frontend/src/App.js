@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RoundButton from './components/RoundButton';
-
 import './App.css';
+import addIcon from './icons/add.svg'
 
 class App extends Component {
   render() {
@@ -59,7 +59,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <RoundButton className="add-post">Add a Book</RoundButton>
+          <RoundButton className="add-post" backgroundImage={addIcon} size={50}>Add a Book</RoundButton>
         </div>
         <div className="footer">
 
