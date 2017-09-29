@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import RoundButton from './components/RoundButton';
+
 import './App.css';
 
 class App extends Component {
@@ -57,9 +59,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="add-post">
-            <a className="primary btn-circle" href="#addpost">Add a book</a>
-          </div>
+          <RoundButton className="add-post">Add a Book</RoundButton>
         </div>
         <div className="footer">
 
