@@ -15,7 +15,7 @@ const RoundButton = (props) => {
 
   return (
     <div className={props.className}>
-      <button className={`btn-circle ${ props.type }`} style={style} >{props.children}</button>
+      <button className={`btn-circle ${ props.type }`} style={style} onClick={props.onClick} >{props.children}</button>
     </div>
   );
 }
@@ -25,6 +25,7 @@ RoundButton.propTypes = {
   type: PropTypes.oneOf(['primary', 'secondary']).isRequired,
   backgroundImage: PropTypes.string,
   size: PropTypes.number,
+  onClick: PropTypes.func
 }
 
 // Specifies the default values for props:

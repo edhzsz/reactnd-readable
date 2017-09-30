@@ -62,6 +62,7 @@ exports[`Component: RoundButton should use the size and background properties fo
   >
     <button
       className="btn-circle primary"
+      onClick={undefined}
       style={
         Object {
           "backgroundImage": "url(./test.jpg)",

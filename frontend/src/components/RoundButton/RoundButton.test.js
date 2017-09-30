@@ -35,4 +35,10 @@ describe('Component: RoundButton', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('executes the onClick handler', () => {
+    const onButtonClick = jest.fn();
+    const button = shallow(<RoundButton backgroundImage="./test.jpg" onClick={onButtonClick} />)
+    button.find('button').simulate('click');
+    expect(onButtonClick.mock.calls.length).toBe(1);
+  });
 });
