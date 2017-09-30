@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import RoundButton from './components/RoundButton';
+import Comment from './components/Comment';
 import Votes from './components/Votes';
 import './App.css';
 import addIcon from './icons/add.svg'
@@ -40,10 +41,7 @@ class App extends Component {
                       <span className="title">Comments</span>
                       <ul>
                         <li>
-                        <div>
-                            <span className="comment-content">Hi there! I am a COMMENT.</span>
-                            <span className="comment-author">thingtwo</span>
-                          </div>
+                          <Comment author="thingtwo" content="Hi there! I am a COMMENT." votes={0} />
                         </li>
                         <li>
                           <div>

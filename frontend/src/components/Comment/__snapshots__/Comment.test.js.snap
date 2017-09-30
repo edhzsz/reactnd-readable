@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Comment should match its snapshot with required props 1`] = `
+<div
+  className="comment"
+>
+  <Votes
+    size={20}
+    votes={2}
+  />
+  <div>
+    <span
+      className="content"
+    >
+      test comment
+    </span>
+    <span
+      className="author"
+    >
+      test
+    </span>
+  </div>
+</div>
+`;
