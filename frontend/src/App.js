@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import RoundButton from './components/RoundButton';
+import Votes from './components/Votes';
 import './App.css';
 import addIcon from './icons/add.svg'
-import downArrowIcon from './icons/down_arrow.svg'
 
 class App extends Component {
   render() {
@@ -30,9 +30,7 @@ class App extends Component {
                 </div>
                 <div className="post-contents">
                   <div className="post-votes">
-                    <RoundButton type="secondary" className="up-vote" backgroundImage={downArrowIcon} size={30}>Up Vote</RoundButton>
-                    <span>6</span>
-                    <RoundButton type="secondary" backgroundImage={downArrowIcon} size={30}>Down Vote</RoundButton>
+                    <Votes votes={6} />
                   </div>
                   <div className="post-wrapper">
                     <div className="post-main">
@@ -42,7 +40,7 @@ class App extends Component {
                       <span className="title">Comments</span>
                       <ul>
                         <li>
-                          <div>
+                        <div>
                             <span className="comment-content">Hi there! I am a COMMENT.</span>
                             <span className="comment-author">thingtwo</span>
                           </div>

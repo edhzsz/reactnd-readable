@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Votes should match its snapshot with required props 1`] = `
+<div
+  className="votes"
+>
+  <RoundButton
+    backgroundImage="down_arrow.svg"
+    className="up-vote"
+    size={30}
+    type="secondary"
+  >
+    Up Vote
+  </RoundButton>
+  <span>
+    2
+  </span>
+  <RoundButton
+    backgroundImage="down_arrow.svg"
+    size={30}
+    type="secondary"
+  >
+    Down Vote
+  </RoundButton>
+</div>
+`;
