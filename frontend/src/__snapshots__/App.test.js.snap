@@ -78,41 +78,21 @@ exports[`Component: App should match its empty snapshot 1`] = `
               <div
                 className="comments-list"
               >
-                <span
-                  className="title"
-                >
+                <span>
                   Comments
                 </span>
-                <ul>
-                  <li>
-                    <div>
-                      <span
-                        className="comment-content"
-                      >
-                        Hi there! I am a COMMENT.
-                      </span>
-                      <span
-                        className="comment-author"
-                      >
-                        thingtwo
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <span
-                        className="comment-content"
-                      >
-                        Comments. Are. Cool.
-                      </span>
-                      <span
-                        className="comment-author"
-                      >
-                        thingone
-                      </span>
-                    </div>
-                  </li>
-                </ul>
+                <div>
+                  <Comment
+                    author="thingtwo"
+                    content="Hi there! I am a COMMENT."
+                    votes={0}
+                  />
+                  <Comment
+                    author="thingone"
+                    content="Comments. Are. Cool."
+                    votes={0}
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -8,14 +8,16 @@ exports[`Component: Comment should match its snapshot with required props 1`] = 
     size={20}
     votes={2}
   />
-  <div>
+  <div
+    className="comment-wrapper"
+  >
     <span
-      className="content"
+      className="comment-content"
     >
       test comment
     </span>
     <span
-      className="author"
+      className="comment-author"
     >
       test
     </span>

@@ -7,9 +7,9 @@ const Comment = (props) => {
   return (
     <div className="comment">
       <Votes votes={props.votes} onUpvote={props.onUpvote} onDownvote={props.onDownvote} size={20} />
-      <div>
-        <span className="content">{props.content}</span>
-        <span className="author">{props.author}</span>
+      <div className="comment-wrapper">
+        <span className="comment-content">{props.content}</span>
+        <span className="comment-author">{props.author}</span>
       </div>
     </div>
   );

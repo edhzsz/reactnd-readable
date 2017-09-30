@@ -1,8 +1,13 @@
-.up-vote button {
-  transform: rotate(180deg);
-  box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 -3px 6px rgba(0,0,0,0.23);
+.votes {
+  float: left;
+  margin: 10px;
 }
 
 .votes span {
   text-align: center;
+}
+
+.up-vote button {
+  transform: rotate(180deg);
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 -3px 6px rgba(0,0,0,0.23);
 }

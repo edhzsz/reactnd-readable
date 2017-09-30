@@ -38,18 +38,11 @@ class App extends Component {
                       Everyone says so after all.
                     </div>
                     <div className="comments-list">
-                      <span className="title">Comments</span>
-                      <ul>
-                        <li>
-                          <Comment author="thingtwo" content="Hi there! I am a COMMENT." votes={0} />
-                        </li>
-                        <li>
-                          <div>
-                            <span className="comment-content">Comments. Are. Cool.</span>
-                            <span className="comment-author">thingone</span>
-                          </div>
-                        </li>
-                      </ul>
+                      <span>Comments</span>
+                      <div>
+                        <Comment author="thingtwo" content="Hi there! I am a COMMENT." votes={0} />
+                        <Comment author="thingone" content="Comments. Are. Cool." votes={0} />
+                      </div>
                     </div>
                   </div>
                 </div>

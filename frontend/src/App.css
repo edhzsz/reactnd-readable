@@ -156,12 +156,6 @@
   overflow: hidden;
 }
 
-.post-votes {
-  float: left;
-  width: 46px;
-  margin: 3px;
-}
-
 .post-wrapper {
   float: left;
 }

@@ -1,0 +1,12 @@
+.comment {
+  overflow: hidden;
+}
+
+.comment-wrapper {
+  float:left;
+  margin: 10px;
+}
+
+.comment-wrapper span {
+  display: block;
+}
