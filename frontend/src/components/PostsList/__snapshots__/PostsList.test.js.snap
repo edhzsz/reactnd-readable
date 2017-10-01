@@ -56,5 +56,13 @@ exports[`Component: PostsList should match its snapshot with required props 1`] 
       }
     }
   />
+  <RoundButton
+    backgroundImage="add.svg"
+    className="add-post"
+    size={50}
+    type="primary"
+  >
+    Add a Post
+  </RoundButton>
 </div>
 `;

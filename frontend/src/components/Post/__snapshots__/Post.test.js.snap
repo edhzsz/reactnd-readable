@@ -28,7 +28,31 @@ exports[`Component: Post should match its snapshot with required props 1`] = `
       <div
         className="post-body"
       >
-        Everyone says so after all.
+        <p>
+          Everyone says so after all.
+        </p>
+        <span
+          className="post-author"
+        >
+          thingtwo
+        </span>
+        <span
+          className="post-category"
+        >
+          react
+        </span>
+        <Timestamp
+          className="post-timestamp"
+          component="span"
+          format="full"
+          includeDay={false}
+          precision={1}
+          since={null}
+          style={Object {}}
+          time={1467166872.634}
+          until={null}
+          utc={true}
+        />
       </div>
       <CommentsList
         comments={

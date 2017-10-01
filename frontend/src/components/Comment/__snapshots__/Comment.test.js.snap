@@ -21,11 +21,18 @@ exports[`Component: Comment should match its snapshot with required props 1`] = 
     >
       thingtwo
     </span>
-    <span
+    <Timestamp
       className="comment-timestamp"
-    >
-      1468166872634
-    </span>
+      component="span"
+      format="full"
+      includeDay={false}
+      precision={1}
+      since={null}
+      style={Object {}}
+      time={1468166872.634}
+      until={null}
+      utc={true}
+    />
   </div>
 </div>
 `;

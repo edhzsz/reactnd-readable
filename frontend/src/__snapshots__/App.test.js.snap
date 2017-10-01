@@ -92,14 +92,6 @@ exports[`Component: App should match its empty snapshot 1`] = `
         }
       />
     </div>
-    <RoundButton
-      backgroundImage="add.svg"
-      className="add-post"
-      size={50}
-      type="primary"
-    >
-      Add a Post
-    </RoundButton>
   </div>
   <div
     className="footer"
