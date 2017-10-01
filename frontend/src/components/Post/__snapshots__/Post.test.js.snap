@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Post should match its snapshot with required props 1`] = `
+<div
+  className="post"
+>
+  <div
+    className="post-title base"
+  >
+    <span>
+      Udacity is the best place to learn React
+    </span>
+  </div>
+  <div
+    className="post-contents"
+  >
+    <div
+      className="post-votes"
+    >
+      <Votes
+        size={30}
+        votes={6}
+      />
+    </div>
+    <div
+      className="post-main"
+    >
+      <div
+        className="post-body"
+      >
+        Everyone says so after all.
+      </div>
+      <CommentsList
+        comments={
+          Array [
+            Object {
+              "author": "thingtwo",
+              "body": "Hi there! I am a COMMENT.",
+              "deleted": false,
+              "id": "894tuq4ut84ut8v4t8wun89g",
+              "parentDeleted": false,
+              "parentId": "8xf0y6ziyjabvozdd253nd",
+              "timestamp": 1468166872634,
+              "voteScore": 6,
+            },
+            Object {
+              "author": "thingone",
+              "body": "Comments. Are. Cool.",
+              "deleted": false,
+              "id": "8tu4bsun805n8un48ve89",
+              "parentDeleted": false,
+              "parentId": "8xf0y6ziyjabvozdd253nd",
+              "timestamp": 1469479767190,
+              "voteScore": -5,
+            },
+          ]
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
