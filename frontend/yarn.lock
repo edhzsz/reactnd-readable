@@ -5366,6 +5366,10 @@ react-test-renderer@^16.0.0:
     fbjs "^0.8.16"
     object-assign "^4.1.1"
 
+react-timestamp@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/react-timestamp/-/react-timestamp-4.2.1.tgz#e143819cfd9072ef37fc1717ecba215eef78cb82"
+
 "react@^15 || ^16":
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"

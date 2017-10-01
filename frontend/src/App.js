@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import RoundButton from './components/RoundButton';
 import PostsList from './components/PostsList';
-import Votes from './components/Votes';
 import './App.css';
-import addIcon from './icons/add.svg'
 
 const posts = [
   {
@@ -72,7 +69,6 @@ class App extends Component {
           <div className="content">
             <PostsList posts={posts} />
           </div>
-          <RoundButton className="add-post" backgroundImage={addIcon} size={50}>Add a Post</RoundButton>
         </div>
         <div className="footer">
 

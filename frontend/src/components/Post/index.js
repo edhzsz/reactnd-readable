@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './Post.css'
 import Votes from '../Votes';
 import CommentsList from '../CommentsList'
+import Timestamp from 'react-timestamp';
 
 const Post = ({post}) => {
   return (
@@ -16,7 +17,10 @@ const Post = ({post}) => {
         </div>
         <div className="post-main">
           <div className="post-body">
-            {post.body}
+            <p>{post.body}</p>
+            <span className="post-author">{post.author}</span>
+            <span className="post-category">{post.category}</span>
+            <Timestamp className="post-timestamp" time={post.timestamp/1000} format='full' />
           </div>
           <CommentsList comments={post.comments} />
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Comment.css'
 import Votes from '../Votes'
+import Timestamp from 'react-timestamp';
 
 const Comment = ({comment, onUpvote, onDownvote}) => {
   return (
@@ -10,7 +11,7 @@ const Comment = ({comment, onUpvote, onDownvote}) => {
       <div className="comment-content">
         <span className="comment-body">{comment.body}</span>
         <span className="comment-author">{comment.author}</span>
-        <span className="comment-timestamp">{comment.timestamp}</span>
+        <Timestamp className="comment-timestamp" time={comment.timestamp/1000} format='full' />
       </div>
     </div>
   );
