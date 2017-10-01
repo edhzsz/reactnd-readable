@@ -13,10 +13,10 @@
 }
 
 .content {
-  padding: 48px 72px;
+  padding: 38px 42px;
   overflow: auto;
   float: left;
-  width: calc(100% - 400px);
+  width: calc(100% - 340px);
   height: calc(100% - 100px);
 }
 
