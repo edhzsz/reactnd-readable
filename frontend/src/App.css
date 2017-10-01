@@ -132,10 +132,6 @@
   background-color: #baddf9;
 }
 
-.post-list {
-  height: 5000px;
-}
-
 .add-post {
   position: fixed;
   right: 25px;

@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import RoundButton from './components/RoundButton';
-import PostsList from './components/PostsList';
-import Votes from './components/Votes';
-import './App.css';
-import addIcon from './icons/add.svg'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import PostsList from '.';
 
-const posts = [
+const testPosts = [
   {
     id: '8xf0y6ziyjabvozdd253nd',
     timestamp: 1467166872634,
@@ -50,36 +49,16 @@ const posts = [
   }
 ];
 
+const wrapper = shallow(<PostsList posts={testPosts}/>);
 
-class App extends Component {
-  render() {
-    return (
-      <div className="app">
-        <div className="header">
-          <h1>Readable</h1>
-        </div>
-        <div className="main">
-          <div className="side-bar">
-            <h2 className="title base">Categories</h2>
-            <ul>
-              <li>All</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Udacity</li>
-              <li>+ Add Category</li>
-            </ul>
-          </div>
-          <div className="content">
-            <PostsList posts={posts} />
-          </div>
-          <RoundButton className="add-post" backgroundImage={addIcon} size={50}>Add a Post</RoundButton>
-        </div>
-        <div className="footer">
+describe('Component: PostsList', () => {
+  it('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<PostsList />, div);
+  });
 
-        </div>
-      </div>
-    );
-  }
-}
-
-export default App;
+  it('should match its snapshot with required props', () => {
+    const tree = toJson(wrapper);
+    expect(tree).toMatchSnapshot();
+  });
+});
