@@ -2,11 +2,11 @@
   overflow: hidden;
 }
 
-.comment-wrapper {
+.comment-content {
   float:left;
   margin: 10px;
 }
 
-.comment-wrapper span {
+.comment-content span {
   display: block;
 }

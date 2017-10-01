@@ -6,20 +6,25 @@ exports[`Component: Comment should match its snapshot with required props 1`] = 
 >
   <Votes
     size={20}
-    votes={2}
+    votes={6}
   />
   <div
-    className="comment-wrapper"
+    className="comment-content"
   >
     <span
-      className="comment-content"
+      className="comment-body"
     >
-      test comment
+      Hi there! I am a COMMENT.
     </span>
     <span
       className="comment-author"
     >
-      test
+      thingtwo
+    </span>
+    <span
+      className="comment-timestamp"
+    >
+      1468166872634
     </span>
   </div>
 </div>

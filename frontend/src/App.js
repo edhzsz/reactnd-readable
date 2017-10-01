@@ -5,6 +5,28 @@ import Votes from './components/Votes';
 import './App.css';
 import addIcon from './icons/add.svg'
 
+const comment1 = {
+  id: '894tuq4ut84ut8v4t8wun89g',
+  parentId: "8xf0y6ziyjabvozdd253nd",
+  timestamp: 1468166872634,
+  body: 'Hi there! I am a COMMENT.',
+  author: 'thingtwo',
+  voteScore: 6,
+  deleted: false,
+  parentDeleted: false
+};
+
+const comment2 = {
+  id: '8tu4bsun805n8un48ve89',
+  parentId: "8xf0y6ziyjabvozdd253nd",
+  timestamp: 1469479767190,
+  body: 'Comments. Are. Cool.',
+  author: 'thingone',
+  voteScore: -5,
+  deleted: false,
+  parentDeleted: false
+};
+
 class App extends Component {
   render() {
     return (
@@ -40,8 +62,8 @@ class App extends Component {
                     <div className="comments-list">
                       <span>Comments</span>
                       <div>
-                        <Comment author="thingtwo" content="Hi there! I am a COMMENT." votes={0} />
-                        <Comment author="thingone" content="Comments. Are. Cool." votes={0} />
+                        <Comment comment={comment1} />
+                        <Comment comment={comment2} />
                       </div>
                     </div>
                   </div>

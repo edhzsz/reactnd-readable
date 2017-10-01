@@ -4,21 +4,28 @@ import './Comment.css'
 import Votes from '../Votes'
 
 const Comment = (props) => {
+  const comment = props.comment;
+
   return (
     <div className="comment">
-      <Votes votes={props.votes} onUpvote={props.onUpvote} onDownvote={props.onDownvote} size={20} />
-      <div className="comment-wrapper">
-        <span className="comment-content">{props.content}</span>
-        <span className="comment-author">{props.author}</span>
+      <Votes votes={comment.voteScore} onUpvote={props.onUpvote} onDownvote={props.onDownvote} size={20} />
+      <div className="comment-content">
+        <span className="comment-body">{comment.body}</span>
+        <span className="comment-author">{comment.author}</span>
+        <span className="comment-timestamp">{comment.timestamp}</span>
       </div>
     </div>
   );
 }
 
 Comment.propTypes = {
-  author: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  votes: PropTypes.number.isRequired,
+  comment: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired,
+    timestamp: PropTypes.number,
+    voteScore: PropTypes.number,
+  }).isRequired,
   onUpvote: PropTypes.func,
   onDownvote: PropTypes.func
 }

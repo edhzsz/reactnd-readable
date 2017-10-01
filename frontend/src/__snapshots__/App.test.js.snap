@@ -83,14 +83,32 @@ exports[`Component: App should match its empty snapshot 1`] = `
                 </span>
                 <div>
                   <Comment
-                    author="thingtwo"
-                    content="Hi there! I am a COMMENT."
-                    votes={0}
+                    comment={
+                      Object {
+                        "author": "thingtwo",
+                        "body": "Hi there! I am a COMMENT.",
+                        "deleted": false,
+                        "id": "894tuq4ut84ut8v4t8wun89g",
+                        "parentDeleted": false,
+                        "parentId": "8xf0y6ziyjabvozdd253nd",
+                        "timestamp": 1468166872634,
+                        "voteScore": 6,
+                      }
+                    }
                   />
                   <Comment
-                    author="thingone"
-                    content="Comments. Are. Cool."
-                    votes={0}
+                    comment={
+                      Object {
+                        "author": "thingone",
+                        "body": "Comments. Are. Cool.",
+                        "deleted": false,
+                        "id": "8tu4bsun805n8un48ve89",
+                        "parentDeleted": false,
+                        "parentId": "8xf0y6ziyjabvozdd253nd",
+                        "timestamp": 1469479767190,
+                        "voteScore": -5,
+                      }
+                    }
                   />
                 </div>
               </div>
