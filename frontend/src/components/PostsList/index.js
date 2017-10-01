@@ -7,10 +7,7 @@ const PostsList = (props) => {
   const posts = props.posts || [];
   return (
     <div className="posts-list">
-      <span>Posts</span>
-      <div>
-        {posts.map(post => (<Post post={post} key={post.id} />))}
-      </div>
+      {posts.map(post => (<Post post={post} key={post.id} />))}
     </div>
   );
 }

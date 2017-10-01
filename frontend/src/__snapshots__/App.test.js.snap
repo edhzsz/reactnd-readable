@@ -43,11 +43,9 @@ exports[`Component: App should match its empty snapshot 1`] = `
     <div
       className="content"
     >
-      <div
-        className="post-list"
-      >
-        <Post
-          post={
+      <PostsList
+        posts={
+          Array [
             Object {
               "author": "thingtwo",
               "body": "Everyone says so after all.",
@@ -79,10 +77,20 @@ exports[`Component: App should match its empty snapshot 1`] = `
               "timestamp": 1467166872634,
               "title": "Udacity is the best place to learn React",
               "voteScore": 6,
-            }
-          }
-        />
-      </div>
+            },
+            Object {
+              "author": "thingone",
+              "body": "Just kidding. It takes more than 10 minutes to learn technology.",
+              "category": "redux",
+              "deleted": false,
+              "id": "6ni6ok3ym7mf1p33lnez",
+              "timestamp": 1468479767190,
+              "title": "Learn Redux in 10 minutes!",
+              "voteScore": -5,
+            },
+          ]
+        }
+      />
     </div>
     <RoundButton
       backgroundImage="add.svg"
