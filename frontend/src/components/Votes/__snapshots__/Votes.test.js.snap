@@ -6,17 +6,24 @@ exports[`Component: Votes should match its snapshot with required props 1`] = `
 >
   <RoundButton
     backgroundImage="down_arrow.svg"
-    className="up-vote"
+    className="upvote"
     size={30}
     type="secondary"
   >
     Up Vote
   </RoundButton>
-  <span>
+  <span
+    style={
+      Object {
+        "fontSize": 15,
+      }
+    }
+  >
     2
   </span>
   <RoundButton
     backgroundImage="down_arrow.svg"
+    className="downvote"
     size={30}
     type="secondary"
   >

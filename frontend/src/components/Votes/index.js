@@ -5,6 +5,10 @@ import RoundButton from '../RoundButton';
 import downArrowIcon from './icons/down_arrow.svg'
 
 const Votes = (props) => {
+  const spanStyle = {
+    fontSize: props.size/2,
+  };
+
   return (
     <div className="votes">
       <RoundButton
@@ -16,7 +20,7 @@ const Votes = (props) => {
         >
         Up Vote
       </RoundButton>
-      <span>{props.votes}</span>
+      <span style={spanStyle}>{props.votes}</span>
       <RoundButton
         type="secondary"
         className="downvote"
