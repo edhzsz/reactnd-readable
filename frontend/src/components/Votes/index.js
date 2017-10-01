@@ -7,9 +7,25 @@ import downArrowIcon from './icons/down_arrow.svg'
 const Votes = (props) => {
   return (
     <div className="votes">
-      <RoundButton type="secondary" className="up-vote" backgroundImage={downArrowIcon} size={props.size}>Up Vote</RoundButton>
+      <RoundButton
+        type="secondary"
+        className="upvote"
+        backgroundImage={downArrowIcon}
+        size={props.size}
+        onClick={props.onUpvote}
+        >
+        Up Vote
+      </RoundButton>
       <span>{props.votes}</span>
-      <RoundButton type="secondary" backgroundImage={downArrowIcon} size={props.size}>Down Vote</RoundButton>
+      <RoundButton
+        type="secondary"
+        className="downvote"
+        backgroundImage={downArrowIcon}
+        size={props.size}
+        onClick={props.onDownvote}
+        >
+        Down Vote
+      </RoundButton>
     </div>
   );
 }
