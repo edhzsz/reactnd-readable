@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
 import RoundButton from './components/RoundButton';
-import Comment from './components/Comment';
+import CommentsList from './components/CommentsList';
 import Votes from './components/Votes';
 import './App.css';
 import addIcon from './icons/add.svg'
 
-const comment1 = {
-  id: '894tuq4ut84ut8v4t8wun89g',
-  parentId: "8xf0y6ziyjabvozdd253nd",
-  timestamp: 1468166872634,
-  body: 'Hi there! I am a COMMENT.',
-  author: 'thingtwo',
-  voteScore: 6,
-  deleted: false,
-  parentDeleted: false
-};
-
-const comment2 = {
-  id: '8tu4bsun805n8un48ve89',
-  parentId: "8xf0y6ziyjabvozdd253nd",
-  timestamp: 1469479767190,
-  body: 'Comments. Are. Cool.',
-  author: 'thingone',
-  voteScore: -5,
-  deleted: false,
-  parentDeleted: false
-};
+const comments = [
+  {
+    id: '894tuq4ut84ut8v4t8wun89g',
+    parentId: "8xf0y6ziyjabvozdd253nd",
+    timestamp: 1468166872634,
+    body: 'Hi there! I am a COMMENT.',
+    author: 'thingtwo',
+    voteScore: 6,
+    deleted: false,
+    parentDeleted: false
+  },
+  {
+    id: '8tu4bsun805n8un48ve89',
+    parentId: "8xf0y6ziyjabvozdd253nd",
+    timestamp: 1469479767190,
+    body: 'Comments. Are. Cool.',
+    author: 'thingone',
+    voteScore: -5,
+    deleted: false,
+    parentDeleted: false
+  }
+];
 
 class App extends Component {
   render() {
@@ -59,13 +60,7 @@ class App extends Component {
                     <div className="post-main">
                       Everyone says so after all.
                     </div>
-                    <div className="comments-list">
-                      <span>Comments</span>
-                      <div>
-                        <Comment comment={comment1} />
-                        <Comment comment={comment2} />
-                      </div>
-                    </div>
+                    <CommentsList comments={comments} />
                   </div>
                 </div>
               </div>
