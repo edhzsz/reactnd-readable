@@ -4,11 +4,12 @@ import './CommentsList.css'
 import Comment from '../Comment'
 
 const CommentsList = (props) => {
+  const comments = props.comments || [];
   return (
     <div className="comments-list">
       <span>Comments</span>
       <div>
-        {props.comments.map(comment => (<Comment comment={comment} key={comment.id} />))}
+        {comments.map(comment => (<Comment comment={comment} key={comment.id} />))}
       </div>
     </div>
   );

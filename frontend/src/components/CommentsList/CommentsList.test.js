@@ -32,7 +32,7 @@ const wrapper = shallow(<CommentsList comments={testComments}/>);
 describe('Component: CommentsList', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<CommentsList comments={testComments}/>, div);
+    ReactDOM.render(<CommentsList />, div);
   });
 
   it('should match its snapshot with required props', () => {
