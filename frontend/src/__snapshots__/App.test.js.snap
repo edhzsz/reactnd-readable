@@ -22,23 +22,7 @@ exports[`Component: App should match its empty snapshot 1`] = `
       >
         Categories
       </h2>
-      <ul>
-        <li>
-          All
-        </li>
-        <li>
-          React
-        </li>
-        <li>
-          Redux
-        </li>
-        <li>
-          Udacity
-        </li>
-        <li>
-          + Add Category
-        </li>
-      </ul>
+      <CategoriesList />
     </div>
     <div
       className="content"

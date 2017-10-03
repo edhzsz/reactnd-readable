@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PostsList from './components/PostsList';
-import Category from './components/Category';
+import CategoriesList from './components/CategoriesList';
 import './App.css';
 
 const posts = [
@@ -59,13 +59,7 @@ class App extends Component {
         <div className="main">
           <div className="side-bar">
             <h2 className="title base">Categories</h2>
-            <div className="categories-list">
-              <Category name="All" />
-              <Category name="React" isSelected={true} />
-              <Category name="Redux" />
-              <Category name="Udacity" />
-              <div>+ Add Category</div>
-            </div>
+            <CategoriesList />
           </div>
           <div className="content">
             <PostsList posts={posts} />
