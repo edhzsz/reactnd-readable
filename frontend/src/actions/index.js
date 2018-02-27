@@ -1,8 +1,8 @@
-export const VIEW_CATEGORY;
+import * as types from '../constants/ActionTypes'
 
 export function viewCategory({name, url}) {
   return {
-    type: VIEW_CATEGORY,
+    type: types.VIEW_CATEGORY,
     name,
     url
   };

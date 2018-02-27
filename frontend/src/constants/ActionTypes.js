@@ -1,0 +1,1 @@
+export const VIEW_CATEGORY = 'VIEW_CATEGORY';
