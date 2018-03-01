@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: App should match its empty snapshot 1`] = `
+exports[`Component: App Connected component should be connected 1`] = `
 <div
   className="App"
 >
@@ -21,11 +21,64 @@ exports[`Component: App should match its empty snapshot 1`] = `
   <p
     className="App-intro"
   >
-    To get started, edit 
-    <code>
-      src/App.js
-    </code>
-     and save to reload.
+    Hello 
+    Edgar
+    !
+  </p>
+</div>
+`;
+
+exports[`Component: App Disconnected component should match its empty snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    Hello 
+    !
+  </p>
+</div>
+`;
+
+exports[`Component: App Disconnected component should render the name prop 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    Hello 
+    Test
+    !
   </p>
 </div>
 `;
