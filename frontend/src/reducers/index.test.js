@@ -1,7 +1,7 @@
-import reducer from './index'
+import reducer from './index';
 
 describe('root reducer', () => {
   it('should return the initial state', () => {
-    expect(reducer()).toEqual({});
+    expect(reducer()).toEqual({'reducer': {}});
   });
 });

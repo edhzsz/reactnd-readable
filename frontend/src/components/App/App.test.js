@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Enzyme, { shallow } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import toJSON from 'enzyme-to-json';
-import configureMockStore from 'redux-mock-store'
-import sinon from 'sinon'
+import configureMockStore from 'redux-mock-store';
+import sinon from 'sinon';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 
 import ConnectedApp, { mapStateToProps, App } from './App';
 
-Enzyme.configure({ adapter: new Adapter() })
+Enzyme.configure({ adapter: new Adapter() });
 
 describe('Component: App', () => {
 
@@ -18,7 +18,7 @@ describe('Component: App', () => {
     it('returns the default state', () => {
       expect(mapStateToProps()).toEqual({
         name: 'Edgar'
-       });
+      });
     });
   });
 

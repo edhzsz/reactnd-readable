@@ -22,7 +22,7 @@ export class App extends Component {
 export function mapStateToProps(state) {
   return {
     name: 'Edgar'
-  }
+  };
 }
 
 export default connect(mapStateToProps)(App);

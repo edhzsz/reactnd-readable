@@ -1,5 +1,5 @@
-import * as actions from '../actions'
-import * as types from '../constants/ActionTypes'
+import * as actions from '../actions';
+import * as types from '../constants/ActionTypes';
 
 describe('Action creator', () => {
   describe('viewCategory', () => {
